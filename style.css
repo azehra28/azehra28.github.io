@@ -1,0 +1,64 @@
+html,body{margin:0;padding:0;}
+body{
+  font-family: Georgia, serif;
+  background:#FACFCE;      
+  color:#023535;           
+  line-height:1.6;
+}
+
+main{
+  max-width:900px;
+  margin:20px auto;
+  padding:18px;
+  background:#fff;
+  border-radius:10px;
+}
+
+h1{font-size:2rem;margin:16px auto;max-width:900px;padding:0 18px;}
+h2{font-size:1.5rem;margin-top:0;}
+h3{font-size:1.2rem;}
+a{color:#008F8C;text-decoration:none;}
+a:hover{color:#015958;text-decoration:underline;}
+
+nav{max-width:900px;margin:0 auto 12px;padding:0 18px;}
+nav a{
+  display:inline-block;padding:6px 10px;margin:6px 6px 0 0;
+  border:1px solid #015958;border-radius:8px;
+  background:#23606E;color:#fff;
+}
+nav a:hover{background:#015958;border-color:#015958;text-decoration:none;}
+
+ol,ul,dl{padding-left:20px;}
+dt{font-weight:bold;}
+dd{margin:0 0 10px 0;}
+
+img{max-width:100%;height:auto;display:block;}
+figure{margin:16px 0;}
+figcaption{color:#23606E;font-size:.95rem;}
+
+.profile-pic{
+  display:block;max-width:420px;width:100%;margin:0 auto;border-radius:8px;
+}
+@media (min-width:900px){ .profile-pic{max-width:500px;} }
+
+
+.about-grid{display:block;}
+@media (min-width:900px){
+  .about-grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;align-items:start;}
+  .about-photo{justify-self:end;}
+}
+
+.grid-2{display:block;}
+@media (min-width:720px){
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+}
+
+.thumb-row{display:flex;gap:14px;justify-content:center;overflow-x:auto;padding-bottom:6px;}
+.thumb-row figure{width:140px;margin:0;flex:0 0 auto;text-align:center;}
+.thumb-row img{width:100%;height:auto;border-radius:6px;border:1px solid #cfd6d6;}
+.thumb-row figcaption{font-size:.8rem;line-height:1.2;color:#23606E;margin-top:4px;}
+
+.photo-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
+.photo-row figure{width:340px;max-width:46%;margin:0;text-align:center;}
+.photo-row img{width:100%;height:auto;border-radius:8px;border:1px solid #d9dfdf;}
+.photo-row figcaption{font-size:.9rem;color:#23606E;margin-top:6px;}
